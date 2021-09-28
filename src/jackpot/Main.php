@@ -87,6 +87,10 @@ class Main extends PluginBase implements Listener {
         return true;
 
       }
+      if($data[0] == null){
+        $player->sendMessage("Thank for support");
+        return true;
+      }
 
       $money = EconomyAPI::getInstance()->myMoney($player);
 
